@@ -1,12 +1,13 @@
 # Sponge settings
 set sponge_purge_only_on_exit true
 
-# Make sure Helix is always hx regardless of distro
+# Make sure helix is hx regardless of distro
 if type -q helix
     alias hx='helix'
     alias shx='sudo helix'
-    # If it's already hx, still add the shx command for easy sudo
-else if type -q hx
+end
+
+if type -q hx
     alias shx='sudo hx'
 end
 
