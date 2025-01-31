@@ -2,8 +2,8 @@
 
 # Set up Pacman config
 echo -e "Setting up pacman"
-pacman_conf = "/etc/pacman.conf"
-pacman_settings = (
+pacman_conf="/etc/pacman.conf"
+pacman_settings=(
   "Color"
   "CheckSpace"
   "VerbosePkgLists"
