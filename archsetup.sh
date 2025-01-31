@@ -2,7 +2,7 @@
 
 # Set up Pacman config
 echo -e "Setting up pacman"
-pacman_conf="/etc/pacman.conf"
+#pacman_conf="/etc/pacman.conf"
 pacman_settings=(
   "Color"
   "CheckSpace"
@@ -12,14 +12,12 @@ pacman_settings=(
 
 # Uncomment settings if not already done
 for line in "${pacman_settings[@]}"; do
-  if grep -q "^#line" "$pacman_conf"; then
-    sudo sed -i "s/^#$line/$line/" "pacman_conf"
-  fi
+    sudo sed -i "/$line/s/^#//g" /etc/pacman.conf
 done
 
 # Enable "I love candy" mode
-if grep -q "^ParallelDownloads" "$pacman_conf" && ! grep -q "^ILoveCandy" "$pacman_conf"; then
-  sudo sed -i "/^nparallelndownloads/a ILoveCandy" "$pacman_conf"
+if ! grep -q "^ILoveCandy" /etc/pacman.conf; then
+  sudo sed -i "/^ParallelDownloads/a ILoveCandy" /etc/pacman.conf
 fi
 
 # Set up the chaotic AUR
