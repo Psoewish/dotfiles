@@ -22,7 +22,7 @@ fi
 
 # Set up the chaotic AUR
 
-if ! grep -q "^\[chaotic\-aur\]" /etc/pacman.conf; then
+if ! grep -q "^\[chaotic-aur\]" /etc/pacman.conf; then
   echo 'Setting up the Chaotic AUR'
   sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
   sudo pacman-key --lsign-key 3056513887B78AEB
