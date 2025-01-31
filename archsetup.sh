@@ -36,7 +36,7 @@ fi
 sudo pacman -Sy --noconfirm
 
 # Set up Paru if not already installed
-if ! type -q 'paru'; then
+if ! command -v paru; then
   echo 'Installing Paru'
   sudo pacman -S paru --noconfirm
 fi
