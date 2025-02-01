@@ -1,3 +1,6 @@
+# Set Helix as the default editor
+set VISUAL helix
+set EDITOR helix
 # Sponge settings
 set sponge_purge_only_on_exit true
 
