@@ -32,7 +32,7 @@
     horizontal_padding = 8
     text_icon_padding = 0
     frame_width = 1
-    frame_color = "#7FBBB3"
+    frame_color = "#9ccfd8"
     gap_size = 10
     separator_color = frame
     sort = urgency_descending
@@ -88,21 +88,22 @@
     mouse_right_click = close_all
 
 [urgency_low]
-    background = "#D3C6AA"
-    foreground = "#293136"
+    background = "#21202e"
+    foreground = "#e0def4"
     timeout = 10
     default_icon = dialog-information
 
 [urgency_normal]
-    background = "#A7C080"
-    foreground = "#293136"
+    background = "#21202e"
+    foreground = "#e0def4"
     timeout = 10
     override_pause_level = 30
     default_icon = dialog-information
 
 [urgency_critical]
-    background = "#E67E80"
-    foreground = "#293136"
+    background = "#21202e"
+    foreground = "#e0def4"
+    frame_color = "#9ccfd8"
     timeout = 0
     override_pause_level = 60
     default_icon = dialog-warning
