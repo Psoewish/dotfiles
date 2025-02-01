@@ -1,6 +1,11 @@
 # Set Helix as the default editor
 set VISUAL helix
 set EDITOR helix
+
+# Pure promps settings
+set --universal pure_check_for_new_updates
+set --universal pure_show_prefix_root_prompt
+
 # Sponge settings
 set sponge_purge_only_on_exit true
 
@@ -11,6 +16,7 @@ if type -q helix
 end
 
 if type -q hx
+    and ! type -q helix
     alias shx='sudo hx'
 end
 
