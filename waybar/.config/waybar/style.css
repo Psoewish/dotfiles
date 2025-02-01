@@ -1,0 +1,74 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: Source Code Pro;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+window#waybar {
+  background: alpha(#ffffff, 0);
+}
+
+.module {
+  background: #21202e;
+  border: 1px solid #9ccfd8;
+  color: #e0def4;
+}
+
+#custom-launcher {
+  padding: 0 11px 0 10px;
+  color: #f6c177;
+}
+
+#workspaces {
+  padding: 0 10px 0 4px;
+}
+
+#workspaces button.empty {
+  color: #e0def4;
+}
+
+#workspaces button.active {
+  color: #9ccfd8;
+}
+
+#workspaces button.urgent {
+  color: #eb6f92;
+}
+
+#workspaces button {
+  color: #9ccfd8;
+}
+
+#clock {
+  padding: 0 10px 0 10px;
+}
+
+#mpris {
+  padding: 0 10px 0 10px;
+}
+
+#tray {
+  padding: 0 10px 0 10px;
+}
+
+#privacy {
+  background: #21202e;
+  border: 1px solid #9ccfd8;
+  color: #eb6f92;
+  padding: 0 10px 0 10px;
+}
+
+#bluetooth {
+  padding: 0 10px 0 10px;  
+}
+
+#network {
+  padding: 0 14px 0 10px;
+}
+
+#custom-power {
+  padding: 0 10px 0 10px;
+  color: #eb6f92;
+}
