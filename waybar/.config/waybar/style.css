@@ -41,6 +41,10 @@ window#waybar {
   color: #9ccfd8;
 }
 
+#window {
+  padding: 0 10px 0 10px;
+}
+
 #clock {
   padding: 0 10px 0 10px;
 }

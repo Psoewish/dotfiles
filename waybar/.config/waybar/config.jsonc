@@ -1,12 +1,13 @@
 {
   "output": "DP-1",
   "layer": "top",
-  "margin": "20 20 0 20",
+  "margin": "20 20 -10 20",
   "spacing": 10,
   
   "modules-left": [
     "custom/launcher",
-    "hyprland/workspaces"
+    "hyprland/workspaces",
+    "hyprland/window"
   ],
   
   "modules-center": [
@@ -41,14 +42,26 @@
     }
   },
 
+  "hyprland/window": {
+    "format": "{class}",
+    "rewrite": {
+      "com.github.th_ch.youtube_music": "󰎄 Youtube Music",
+      "discord": "  Discord",
+      "footclient": " Foot",
+      "Microsoft-edge": "󰇩 Microsoft Edge",
+      "steam": " Steam"
+    },
+    "separate-outputs": true,
+  },
+
   "clock": {
     "format": "{:%H:%M}",
     "tooltip-format": "{:%Y-%m-%d}" 
   },
 
   "mpris": {
-    "ignored-players": ["microsoft-edge-stable"],
-    "format": "{artist} - {title} ({position}/{length})",
+    "ignored-players": ["edge"],
+    "format": "{title} - {artist}",
     "interval": 1
   },
 
