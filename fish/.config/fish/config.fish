@@ -1,3 +1,4 @@
+set SSH_AUTH_SOCK /tmp/ssh-XXXXXXZz35nr/agent.48172
 # Set Helix as the default editor
 set VISUAL helix
 set EDITOR helix
