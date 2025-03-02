@@ -1,4 +1,3 @@
-
 theme = "rose_pine"
 
 [editor]
@@ -31,5 +30,5 @@ render = true
 character = "|"
 skip-levels = 1
 
-[editor.inline-diagnostics]
-cursor-line = "warning"
+#[editor.inline-diagnostics]
+#cursor-line = "error"

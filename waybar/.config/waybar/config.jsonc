@@ -3,32 +3,19 @@
   "layer": "top",
   "margin": "20 20 -10 20",
   "spacing": 10,
-  
   "modules-left": [
-    "custom/launcher",
-    "hyprland/workspaces",
-    "hyprland/window"
+    "hyprland/workspaces"
   ],
-  
   "modules-center": [
-    "clock"
+    "mpris"
   ],
-  
   "modules-right": [
-    "mpris",
     "tray",
     "privacy",
     "bluetooth",
     "network",
-    "custom/power"
+    "clock"
   ],
-
-  "custom/launcher": {
-    "format": "󰵆",
-    "on-click": "exec uwsm app -- tofi-drun",
-    "on-click-right": "exec uwsm app -- tofi-run"
-  },
-
   "hyprland/workspaces": {
     "format": "{icon}",
     "persistent-workspaces": {
@@ -41,54 +28,36 @@
       "default": ""
     }
   },
-
   "hyprland/window": {
-    "format": "{class}",
-    "rewrite": {
-      "com.github.th_ch.youtube_music": "󰎄 Youtube Music",
-      "discord": "  Discord",
-      "footclient": " Foot",
-      "Microsoft-edge": "󰇩 Microsoft Edge",
-      "steam": " Steam"
-    },
-    "separate-outputs": true,
+    "format": "{title}",
+    "separate-outputs": true
   },
-
   "clock": {
     "format": "{:%H:%M}",
-    "tooltip-format": "{:%Y-%m-%d}" 
+    "tooltip-format": "{:%Y-%m-%d}"
   },
-
   "mpris": {
-    "ignored-players": ["edge"],
-    "format": "{title} - {artist}",
+    "player": "chromium",
+    "format": "{artist} - {title}",
+    "max-length": 80,
     "interval": 1
   },
-
   "tray": {
     "icon-size": 18,
     "spacing": 10
   },
-
   "privacy": {
     "icon-size": 18,
     "icon-spacing": 10
   },
-
   "bluetooth": {
     "format": "󰂯",
     "format-on": "󰂯",
     "format-off": "󰂲"
   },
-
   "network": {
     "format": "{icon} {bandwidthDownBytes} {bandwidthUpBytes}",
     "format-ethernet": "",
     "format-disconnected": "󰈂"
-  },
-
-  "custom/power": {
-    "format": "⏻",
-    "on-click": ""
   }
 }
