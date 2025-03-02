@@ -1,0 +1,81 @@
+window.Bar > centerbox {
+  border: 1px solid #378DF7;
+  background-color: #212223;
+  box-shadow: none;
+  color: #f1f1f1;
+  margin: 20px 20px 0 20px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+window.Bar label {
+  margin: 8px;
+}
+window.Bar .Workspaces button {
+  all: unset;
+  background-color: transparent;
+}
+window.Bar .Workspaces button:hover label {
+  background-color: rgba(241, 241, 241, 0.16);
+  border-color: rgba(55, 141, 247, 0.2);
+}
+window.Bar .Workspaces button:active label {
+  background-color: rgba(241, 241, 241, 0.2);
+}
+window.Bar .Workspaces label {
+  transition: 200ms;
+  padding: 0 8px;
+  margin: 2px;
+  border-radius: 0px;
+  border: 1pt solid transparent;
+}
+window.Bar .Workspaces .focused label {
+  color: #378DF7;
+  border-color: #378DF7;
+}
+window.Bar .SysTray {
+  margin-right: 8px;
+}
+window.Bar .SysTray button {
+  padding: 0 4px;
+}
+window.Bar .FocusedClient {
+  color: #378DF7;
+}
+window.Bar .Media .Cover {
+  min-height: 1.2em;
+  min-width: 1.2em;
+  border-radius: 0px;
+  background-position: center;
+  background-size: contain;
+}
+window.Bar .Battery label {
+  padding-left: 0;
+  margin-left: 0;
+}
+window.Bar .AudioSlider * {
+  all: unset;
+}
+window.Bar .AudioSlider icon {
+  margin-right: 0.6em;
+}
+window.Bar .AudioSlider {
+  margin: 0 1em;
+}
+window.Bar .AudioSlider trough {
+  background-color: rgba(241, 241, 241, 0.2);
+  border-radius: 0px;
+}
+window.Bar .AudioSlider highlight {
+  background-color: #378DF7;
+  min-height: 0.8em;
+  border-radius: 0px;
+}
+window.Bar .AudioSlider slider {
+  background-color: #f1f1f1;
+  border-radius: 0px;
+  min-height: 1em;
+  min-width: 1em;
+  margin: -0.2em;
+}
+
+/*# sourceMappingURL=style.css.map */
