@@ -30,5 +30,8 @@ render = true
 character = "|"
 skip-levels = 1
 
-#[editor.inline-diagnostics]
-#cursor-line = "error"
+[editor.inline-diagnostics]
+cursor-line = "error"
+
+[keys.normal]
+C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
