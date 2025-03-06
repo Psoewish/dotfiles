@@ -38,3 +38,6 @@ end
 
 alias mkdir='mkdir -pv'
 alias cp='rsync -ah --info=progress2'
+
+# Zoxide settings
+zoxide init fish --cmd cd | source
