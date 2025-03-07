@@ -1,20 +1,20 @@
 {
   "output": "DP-1",
   "layer": "top",
-  "margin": "20 20 -10 20",
+  "margin": "10 10 0 10",
   "spacing": 10,
   "modules-left": [
     "hyprland/workspaces"
   ],
   "modules-center": [
-    "mpris"
+    "clock"
   ],
   "modules-right": [
+    "mpris",
     "tray",
     "privacy",
     "bluetooth",
-    "network",
-    "clock"
+    "network"
   ],
   "hyprland/workspaces": {
     "format": "{icon}",

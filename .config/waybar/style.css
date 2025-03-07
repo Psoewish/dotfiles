@@ -1,9 +1,9 @@
 * {
   border: none;
-  border-radius: 0;
-  font-family: Source Code Pro, Source Han Sans;
+  border-radius: 8;
+  font-family: CaskaydiaCove Nerd Font, Source Han Sans;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 window#waybar {
@@ -65,7 +65,7 @@ window#waybar {
 }
 
 #bluetooth {
-  padding: 0 10px 0 10px;  
+  padding: 0 10px 0 10px;
 }
 
 #network {
