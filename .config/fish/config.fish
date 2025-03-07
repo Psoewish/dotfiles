@@ -1,14 +1,13 @@
 set SSH_AUTH_SOCK /tmp/ssh-XXXXXXZz35nr/agent.48172
 # Set Helix as the default editor
-set VISUAL helix
-set EDITOR helix
-
-# Pure promps settings
-set --universal pure_check_for_new_updates
-set --universal pure_show_prefix_root_prompt
+set -gx VISUAL helix
+set -gx EDITOR helix
 
 # Sponge settings
 set sponge_purge_only_on_exit true
+
+# Zide path
+fish_add_path ~/.config/zide/bin
 
 # Make sure helix is hx regardless of distro
 if type -q helix
