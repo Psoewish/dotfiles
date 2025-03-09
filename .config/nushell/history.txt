@@ -191,3 +191,16 @@ cd /home/psoewish/.config/zellij
 ls
 cd /home/psoewish/.config/zellij/layouts
 ls
+lazygit
+ls
+lazygit
+cd /home/psoewish/.config/qutebrowser
+ls
+cd rosepine
+ls
+cd /home/psoewish/dotfiles
+lazygit
+ls
+..
+ls
+rm config.py.bak

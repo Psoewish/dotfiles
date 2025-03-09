@@ -1,7 +1,0 @@
-import rosepine
-
-config.load_autoconfig()
-
-rosepine.setup(c, 'rose-pine', True)
-
-
