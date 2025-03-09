@@ -36,11 +36,11 @@ if type -q ripgrep; and type -q batgrep
     alias grep='batgrep --color --paging="never"'
 end
 
-# if type -q eza
-#     alias ls='eza -a --group-directories-first --icons="always"'
-#     alias ll='eza -al --group-directories-first --icons="always"'
-#     alias l.="eza -a | grep -e '^\.'"
-# end
+if type -q eza
+    alias ls='eza -a --group-directories-first --icons="always"'
+    alias ll='eza -al --group-directories-first --icons="always"'
+    alias l.="eza -a | grep -e '^\.'"
+end
 
 alias mkdir='mkdir -pv'
 alias cp='rsync -ah --info=progress2'

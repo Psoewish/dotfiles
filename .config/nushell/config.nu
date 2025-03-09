@@ -4,13 +4,14 @@ source ./zoxide.nu
 $env.config.buffer_editor = 'helix'
 $env.EDITOR = 'helix'
 $env.VISUAL = 'zed'
-# $env.MANPAGER = 'sh -c "sed -u -e \'s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\' | bat -p -lman"'
 
 # Aliases
 alias hx = helix
 alias shx = sudo helix
 alias cat = bat
-alias grep = ripgrep
+alias man = batman
+alias diff = batdiff
+alias grep = batgrep
 alias ls = ls -a
 alias ll = ls -al
 
@@ -42,7 +43,7 @@ let external_completer = {|spans|
 
   # Assign completers
   match $spans.0 {
-    __zoxide_z | __zoxide_zi => $zoxide_completer
+    # __zoxide_z | __zoxide_zi => $zoxide_completer
     _ => $fish_completer
   } | do $in $spans
 }
