@@ -6,7 +6,7 @@ default_layout "compact"
 pane_frames false
 auto_layout true
 
-theme "catppuccin-mocha"
+theme "rose-pine"
 mouse_mode true
 scroll_buffer_size 10000
 copy_command "wl-copy"                    // wayland
