@@ -5,8 +5,6 @@ else
     zellij
 end
 
-set SSH_AUTH_SOCK /tmp/ssh-XXXXXXZz35nr/agent.48172
-
 # Set Helix as the default editor
 set -gx VISUAL helix
 set -gx EDITOR helix
@@ -44,6 +42,9 @@ end
 
 alias mkdir='mkdir -pv'
 alias cp='rsync -ah --info=progress2'
+
+# Load Starship prompt
+starship init fish | source
 
 # Zoxide settings
 zoxide init fish --cmd cd | source
