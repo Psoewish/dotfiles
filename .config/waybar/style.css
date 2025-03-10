@@ -1,7 +1,9 @@
+@import "./rose-pine.css";
+
 * {
   border: none;
   border-radius: 8;
-  font-family: CaskaydiaCove Nerd Font, Source Han Sans;
+  font-family: CaskaydiaMono Nerd Font, Source Han Sans;
   font-weight: bold;
   font-size: 18px;
 }
@@ -11,14 +13,9 @@ window#waybar {
 }
 
 .module {
-  background: #21202e;
-  border: 1px solid #9ccfd8;
-  color: #e0def4;
-}
-
-#custom-launcher {
-  padding: 0 11px 0 10px;
-  color: #f6c177;
+  background: @base;
+  border: 1px solid @rose;
+  color: @text;
 }
 
 #workspaces {
@@ -26,19 +23,19 @@ window#waybar {
 }
 
 #workspaces button.empty {
-  color: #e0def4;
+  color: @text;
 }
 
 #workspaces button.active {
-  color: #9ccfd8;
+  color: @rose;
 }
 
 #workspaces button.urgent {
-  color: #eb6f92;
+  color: @love;
 }
 
 #workspaces button {
-  color: #9ccfd8;
+  color: @foam;
 }
 
 #window {
@@ -58,9 +55,7 @@ window#waybar {
 }
 
 #privacy {
-  background: #21202e;
-  border: 1px solid #9ccfd8;
-  color: #eb6f92;
+  color: @love;
   padding: 0 10px 0 10px;
 }
 
@@ -70,9 +65,4 @@ window#waybar {
 
 #network {
   padding: 0 14px 0 10px;
-}
-
-#custom-power {
-  padding: 0 10px 0 10px;
-  color: #eb6f92;
 }

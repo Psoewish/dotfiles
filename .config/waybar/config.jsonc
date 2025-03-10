@@ -19,7 +19,7 @@
   "hyprland/workspaces": {
     "format": "{icon}",
     "persistent-workspaces": {
-      "DP-1": 4,
+      "DP-1": 4
     },
     "format-icons": {
       "active": "󰪥",
@@ -37,7 +37,7 @@
     "tooltip-format": "{:%Y-%m-%d}"
   },
   "mpris": {
-    "player": "chromium",
+    "player": "cider",
     "format": "{artist} - {title}",
     "max-length": 80,
     "interval": 1
