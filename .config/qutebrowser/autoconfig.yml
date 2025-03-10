@@ -25,5 +25,7 @@ settings:
     global: true
   statusbar.show:
     global: in-mode
+  tabs.position:
+    global: top
   tabs.show:
     global: always
