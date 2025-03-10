@@ -1,8 +1,8 @@
-import rosepine
+import themes.rosepine
 
 config.load_autoconfig(True)
 
-rosepine.setup(c, 'rose-pine', True)
+themes.rosepine.setup(c, 'rose-pine', True)
 
 c.colors.webpage.darkmode.enabled = True
 c.auto_save.session = True
