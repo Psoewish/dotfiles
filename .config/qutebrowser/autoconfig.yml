@@ -14,11 +14,17 @@ settings:
     global: true
   colors.webpage.preferred_color_scheme:
     global: dark
+  content.blocking.enabled:
+    global: true
+  content.blocking.method:
+    global: both
   content.javascript.clipboard:
     https://github.com: access-paste
     https://pass.proton.me: access-paste
   content.notifications.enabled:
     https://www.youtube.com: true
+  content.proxy:
+    global: system
   scrolling.bar:
     global: never
   scrolling.smooth:
@@ -29,3 +35,7 @@ settings:
     global: top
   tabs.show:
     global: always
+  url.searchengines:
+    global:
+      DEFAULT: https://duckduckgo.com/?q={}
+      yt: https://youtube.com/results?search_query={}

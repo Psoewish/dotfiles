@@ -21,3 +21,5 @@ c.fonts.default_family = 'CaskaydiaCove Nerd Font'
 c.fonts.default_size = '12pt'
 
 config.bind('<Alt+Ctrl+C>', 'config-cycle tabs.show always never')
+
+c.content.dns_prefetch = False
