@@ -12,7 +12,7 @@ c.statusbar.show = 'in-mode'
 
 c.tabs.pinned.shrink = False
 c.tabs.pinned.frozen = True
-c.tabs.position = 'left'
+c.tabs.position = 'top'
 c.tabs.last_close = 'startpage'
 c.tabs.padding = {'bottom': 8, 'left': 8, 'right': 8, 'top': 8}
 c.tabs.width = 200
