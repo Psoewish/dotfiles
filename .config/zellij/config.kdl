@@ -1,5 +1,5 @@
 simplified_ui true
-default_shell "nu"
+default_shell "fish"
 default_cwd "~"
 default_layout "compact"
 
