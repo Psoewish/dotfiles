@@ -2,7 +2,7 @@ simplified_ui true
 default_shell "fish"
 default_cwd "~"
 layout_dir "/home/psoewish/.config/zellij/layouts"
-default_layout "compact"
+default_layout "default"
 
 pane_frames false
 auto_layout true
