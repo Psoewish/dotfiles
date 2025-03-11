@@ -66,3 +66,10 @@ window#waybar {
 #network {
   padding: 0 14px 0 10px;
 }
+
+#privacy {
+  background: @base;
+  border: 1px solid @rose;
+  color: @love;
+  padding: 0 10px 0 10px;
+}
