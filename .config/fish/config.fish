@@ -12,9 +12,6 @@ set -gx EDITOR helix
 # Sponge settings
 set sponge_purge_only_on_exit true
 
-# Zide path
-fish_add_path ~/.config/zide/bin
-
 if type -q helix
     alias hx='helix'
     alias shx='sudo helix'
