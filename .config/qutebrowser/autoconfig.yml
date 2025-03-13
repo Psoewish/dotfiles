@@ -25,6 +25,10 @@ settings:
     https://www.youtube.com: true
   content.proxy:
     global: system
+  content.register_protocol_handler:
+    https://mail.proton.me#mailto=%25s: true
+  hints.scatter:
+    global: true
   scrolling.bar:
     global: never
   scrolling.smooth:

@@ -9,6 +9,7 @@ c.auto_save.session = True
 c.scrolling.bar = 'never'
 c.scrolling.smooth = True
 c.statusbar.show = 'in-mode'
+c.hints.chars = "arstneio"
 
 c.tabs.pinned.shrink = False
 c.tabs.pinned.frozen = True
@@ -22,4 +23,10 @@ c.fonts.default_size = '12pt'
 
 config.bind('<Alt+Ctrl+C>', 'config-cycle tabs.show always never')
 
-c.content.dns_prefetch = False
+c.content.autoplay = False
+
+# Keybinds
+config.bind('<d>', 'scroll-page 0 0.5')
+config.bind('<u>', 'scroll-page 0 -0.5')
+config.bind('<x>', 'tab-close')
+config.bind('<U>', 'undo')
