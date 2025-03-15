@@ -1,8 +1,13 @@
 theme = "rose_pine"
 
 [editor]
-line-number = "absolute"
+line-number = "relative"
+continue-comments = false
+preview-completion-insert = false
 bufferline = "multiple"
+color-modes = true
+popup-border = "all"
+indent-heuristic = "tree-sitter"
 end-of-line-diagnostics = "hint"
 
 [editor.statusline]
@@ -18,6 +23,15 @@ select = "block"
 [editor.file-picker]
 hidden = false
 
+[editor.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+"'" = "'"
+'`' = '`'
+'<' = '>'
+
 [editor.whitespace.render]
 space = "none"
 tab = "all"
@@ -27,11 +41,60 @@ newline = "none"
 
 [editor.indent-guides]
 render = true
-character = "|"
+character = "▏"
 skip-levels = 1
 
+[editor.soft-wrap]
+enable = true
+
 [editor.inline-diagnostics]
-cursor-line = "error"
+cursor-line = "warning"
 
 [keys.normal]
-C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
+esc = [ "collapse_selection", "keep_primary_selection" ]
+C-g = [ ":new", ":insert-output lazygit", ":buffer-close!", ":redraw" ]
+C-s = [ ":w" ]
+j = "move_char_left"
+k = "move_line_down"
+h = "move_line_up"
+l = "move_char_right"
+D = "kill_to_line_end"
+
+[keys.normal.g]
+j = "goto_line_start"
+k = "move_line_down"
+h = "move_line_up"
+l = "goto_line_end"
+
+[keys.normal.space]
+tab = ":buffer-next"
+S-tab = ":buffer-previous"
+
+[keys.normal.space.w]
+j = "jump_view_left"
+k = "jump_view_down"
+h = "jump_view_up"
+l = "jump_view_right"
+
+[keys.normal.space.C-w]
+j = "jump_view_left"
+k = "jump_view_down"
+h = "jump_view_up"
+l = "jump_view_right"
+
+[keys.insert]
+esc = "normal_mode"
+
+[keys.select]
+j = "move_char_left"
+k = "move_line_down"
+h = "move_line_up"
+l = "move_char_right"
+
+[keys.normal.z]
+k = "scroll_down"
+h = "scroll_up"
+
+[keys.normal.Z]
+k = "scroll_down"
+h = "scroll_up"
