@@ -1,9 +1,9 @@
 set -U fish_greeting
 
-if set -q ZELLIJ
-else
-    zellij
-end
+# if set -q ZELLIJ
+# else
+#     zellij
+# end
 
 # Set Helix as the default editor
 set -gx VISUAL helix
