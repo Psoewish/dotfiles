@@ -24,9 +24,3 @@ c.fonts.default_size = '12pt'
 config.bind('<Alt+Ctrl+C>', 'config-cycle tabs.show always never')
 
 c.content.autoplay = False
-
-# Keybinds
-config.bind('<d>', 'scroll-page 0 0.5')
-config.bind('<u>', 'scroll-page 0 -0.5')
-config.bind('<x>', 'tab-close')
-config.bind('<U>', 'undo')
