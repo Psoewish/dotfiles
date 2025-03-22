@@ -1,0 +1,17 @@
+layout {
+	pane split_direction="vertical" {
+		pane name="filemanager" {
+			size "25"
+			command "env"
+			args "YAZI_CONFIG_HOME=~/.config/yazi/sidebar" "yazi"
+		}
+		pane split_direction="horizontal" {
+			pane name="editor"{
+				command "helix"
+			}
+			pane name="terminal"{
+				size "10"
+			}
+		}
+	}
+}
