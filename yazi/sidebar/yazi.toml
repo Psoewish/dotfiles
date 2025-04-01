@@ -1,6 +1,0 @@
-[manager]
-show_hidden = true
-ratio = [0, 4, 0]
-
-[opener]
-edit = [{ run = 'zellij edit "$1"', desc = "Open file in a new pane" }]
