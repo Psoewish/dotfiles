@@ -1,59 +1,65 @@
-"$schema" = 'https://starship.rs/config-schema.json'
-
-palette = "rose-pine"
-
-format = """
-$username\
-$hostname\
-$directory\
-$git_branch\
-$git_state\
-$git_status\
-$cmd_duration\
-$line_break\
-$python\
-$character"""
-
-[directory]
-style = "pine"
-
-[character]
-success_symbol = "[❯](iris)"
-error_symbol = "[❯](love)"
-vimcmd_symbol = "[❮](foam)"
+format = "$directory$git_branch$git_status$line_break$username$hostname$nix_shell$character"
+palette = "base16"
 
 [git_branch]
-format = "[$branch]($style)"
-style = "rose"
+format = "[$branch]($style) "
 
 [git_status]
-format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
-style = "foam"
-conflicted = "​"
-untracked = "​"
-modified = "​"
-staged = "​"
-renamed = "​"
-deleted = "​"
-stashed = "≡"
+format = "[$all_status]($style) "
 
-[git_state]
-format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "overlay"
+[hostname]
+format = "[$hostname]($style) "
 
-[cmd_duration]
-format = "[$duration]($style) "
-style = "gold"
+[nix_shell]
+format = "[$name]($style) "
 
-[python]
-format = "[$virtualenv]($style) "
-style = "overlay"
+[palettes.base16]
+base00 = "#191724"
+base01 = "#1f1d2e"
+base02 = "#26233a"
+base03 = "#6e6a86"
+base04 = "#908caa"
+base05 = "#e0def4"
+base06 = "#e0def4"
+base07 = "#524f67"
+base08 = "#eb6f92"
+base09 = "#f6c177"
+base0A = "#ebbcba"
+base0B = "#31748f"
+base0C = "#9ccfd8"
+base0D = "#c4a7e7"
+base0E = "#f6c177"
+base0F = "#524f67"
+base10 = "#191724"
+base11 = "#191724"
+base12 = "#eb6f92"
+base13 = "#f6c177"
+base14 = "#31748f"
+base15 = "#9ccfd8"
+base16 = "#c4a7e7"
+base17 = "#f6c177"
+black = "#191724"
+blue = "#c4a7e7"
+bright-black = "#6e6a86"
+bright-blue = "#c4a7e7"
+bright-cyan = "#9ccfd8"
+bright-green = "#31748f"
+bright-magenta = "#f6c177"
+bright-orange = "#f6c177"
+bright-purple = "#f6c177"
+bright-red = "#eb6f92"
+bright-white = "#524f67"
+bright-yellow = "#ebbcba"
+brown = "#524f67"
+cyan = "#9ccfd8"
+green = "#31748f"
+magenta = "#f6c177"
+orange = "#f6c177"
+purple = "#f6c177"
+red = "#eb6f92"
+white = "#e0def4"
+yellow = "#ebbcba"
 
-[palettes.rose-pine]
-overlay = '#26233a'
-love = '#eb6f92'
-gold = '#f6c177'
-rose = '#ebbcba'
-pine = '#31748f'
-foam = '#9ccfd8'
-iris = '#c4a7e7'
+[username]
+format = "[$user]($style) "
+
