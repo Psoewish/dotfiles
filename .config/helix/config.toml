@@ -3,11 +3,8 @@ theme = "rose_pine"
 [editor]
 line-number = "relative"
 continue-comments = false
-preview-completion-insert = false
 bufferline = "multiple"
 color-modes = true
-popup-border = "all"
-indent-heuristic = "tree-sitter"
 end-of-line-diagnostics = "hint"
 
 [editor.statusline]
@@ -16,9 +13,7 @@ center = ["spinner","file-name","file-modification-indicator"]
 right = ["file-type","position"]
 
 [editor.cursor-shape]
-normal = "block"
 insert = "bar"
-select = "block"
 
 [editor.file-picker]
 hidden = false
