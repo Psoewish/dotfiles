@@ -136,19 +136,27 @@ def set_floating(window):
         pass
 
 
+def init_widgets():
+    widgets = [
+        widget.GroupBox(
+            highlight_method = "line",
+            disable_drag = True,
+            visible_groups = ["1", "2", "3", "4"],
+            invert_mouse_wheel = True,
+        ),
+        widget.Spacer(),
+        widget.Clock(),
+        widget.Spacer(),
+        widget.Systray(),
+    ]
+    return widgets
+
+
 def init_screens():
     wallpaper = "~/dotfiles/wallpapers/anime-wallpaper-night.jpg"
     screens = [
         Screen(
-            top=bar.Bar(
-                [
-                    widget.GroupBox(),
-                    widget.WindowName(),
-                    widget.Clock(),
-                    widget.Systray(),
-                ],
-                24,
-            ),
+            top=bar.Bar(widgets=init_widgets(), size=32),
             wallpaper=wallpaper,
             wallpaper_mode="fill",
         ),
