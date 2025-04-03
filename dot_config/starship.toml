@@ -1,0 +1,65 @@
+format = "$directory$git_branch$git_status$line_break$username$hostname$nix_shell$character"
+palette = "base16"
+
+[git_branch]
+format = "[$branch]($style) "
+
+[git_status]
+format = "[$all_status]($style) "
+
+[hostname]
+format = "[$hostname]($style) "
+
+[nix_shell]
+format = "[$name]($style) "
+
+[palettes.base16]
+base00 = "#191724"
+base01 = "#1f1d2e"
+base02 = "#26233a"
+base03 = "#6e6a86"
+base04 = "#908caa"
+base05 = "#e0def4"
+base06 = "#e0def4"
+base07 = "#524f67"
+base08 = "#eb6f92"
+base09 = "#f6c177"
+base0A = "#ebbcba"
+base0B = "#31748f"
+base0C = "#9ccfd8"
+base0D = "#c4a7e7"
+base0E = "#f6c177"
+base0F = "#524f67"
+base10 = "#191724"
+base11 = "#191724"
+base12 = "#eb6f92"
+base13 = "#f6c177"
+base14 = "#31748f"
+base15 = "#9ccfd8"
+base16 = "#c4a7e7"
+base17 = "#f6c177"
+black = "#191724"
+blue = "#c4a7e7"
+bright-black = "#6e6a86"
+bright-blue = "#c4a7e7"
+bright-cyan = "#9ccfd8"
+bright-green = "#31748f"
+bright-magenta = "#f6c177"
+bright-orange = "#f6c177"
+bright-purple = "#f6c177"
+bright-red = "#eb6f92"
+bright-white = "#524f67"
+bright-yellow = "#ebbcba"
+brown = "#524f67"
+cyan = "#9ccfd8"
+green = "#31748f"
+magenta = "#f6c177"
+orange = "#f6c177"
+purple = "#f6c177"
+red = "#eb6f92"
+white = "#e0def4"
+yellow = "#ebbcba"
+
+[username]
+format = "[$user]($style) "
+
