@@ -1,3 +1,5 @@
+# syntax highlighting variables
+# https://fishshell.com/docs/current/interactive.html#syntax-highlighting-variables
 fish_color_normal e0def4
 fish_color_command c4a7e7
 fish_color_keyword 9ccfd8
@@ -7,20 +9,23 @@ fish_color_end 908caa
 fish_color_error eb6f92
 fish_color_param ebbcba
 fish_color_comment 908caa
-fish_color_match --background=brblue
+# fish_color_match --background=brblue
 fish_color_selection --reverse
-fish_color_history_current --bold
+# fish_color_history_current --bold
 fish_color_operator e0def4
 fish_color_escape 31748f
 fish_color_autosuggestion 908caa
 fish_color_cwd ebbcba
-fish_color_cwd_root red
+# fish_color_cwd_root red
 fish_color_user f6c177
 fish_color_host 9ccfd8
 fish_color_host_remote c4a7e7
 fish_color_cancel e0def4
 fish_color_search_match --background=191724
 fish_color_valid_path
+
+# pager color variables
+# https://fishshell.com/docs/current/interactive.html#pager-color-variables
 fish_pager_color_progress ebbcba
 fish_pager_color_background --background=1f1d2e
 fish_pager_color_prefix 9ccfd8
@@ -34,3 +39,13 @@ fish_pager_color_selected_background --background=26233a
 fish_pager_color_selected_prefix 9ccfd8
 fish_pager_color_selected_completion e0def4
 fish_pager_color_selected_description e0def4
+
+# custom color variables
+fish_color_subtle 908caa
+fish_color_text e0def4
+fish_color_love eb6f92
+fish_color_gold f6c177
+fish_color_rose ebbcba
+fish_color_pine 31748f
+fish_color_foam 9ccfd8
+fish_color_iris c4a7e7
