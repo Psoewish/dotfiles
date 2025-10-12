@@ -3,7 +3,7 @@ status is-interactive; and begin
     set -U fish_greeting
 
     # Set theme
-	fish_config theme choose "Rosé Pine"
+	fish_config theme choose "rose-pine"
 
     # Set Helix as the default editor
     set -gx VISUAL helix
