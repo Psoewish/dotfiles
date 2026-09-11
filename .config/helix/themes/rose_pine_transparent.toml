@@ -1,1 +1,2 @@
-../../../nixos-config/home/.config/helix/themes/rose_pine_transparent.toml
+inherits = "rose_pine"
+"ui.background" = {}
