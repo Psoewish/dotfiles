@@ -1,0 +1,103 @@
+{
+  "enable_language_server": true,
+  "linked_edits": true,
+  "diagnostics": {
+    "lsp_pull_diagnostics": {
+      "enabled": true
+    }
+  },
+  "completions": {
+    "lsp": true
+  },
+  "semantic_tokens": "off",
+  "window_decorations": "client",
+  "title_bar": {
+    "button_layout": "platform_default"
+  },
+  "active_pane_modifiers": {
+    "border_size": 0.0
+  },
+  "diff_view_style": "unified",
+  "cli_default_open_behavior": "existing_window",
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "git_panel": {
+    "tree_view": true,
+    "dock": "left"
+  },
+  "auto_install_extensions": {
+    "basher": true,
+    "catppuccin-icons": true,
+    "color-highlight": true,
+    "csharp": true,
+    "desktop": true,
+    "docker-compose": true,
+    "dockerfile": true,
+    "fish": true,
+    "html": true,
+    "hyprlang": true,
+    "ini": true,
+    "jq": true,
+    "json5": true,
+    "lua": true,
+    "nix": true,
+    "nu": true,
+    "pylsp": true,
+    "qml": true,
+    "rainbow-csv": true,
+    "scss": true,
+    "toml": true,
+    "xml": true,
+    "zig": true
+  },
+  "disable_ai": false,
+  "helix_mode": true,
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Catppuccin Mocha",
+    "dark": "Catppuccin Mocha"
+  },
+  "languages": {
+    "Nix": {
+      "formatter": {
+        "external": {
+          "command": "alejandra"
+        }
+      },
+      "language_servers": [
+        "nixd",
+        "!nil"
+      ]
+    }
+  },
+  "lsp_document_colors": "background",
+  "telemetry": {
+    "metrics": false
+  },
+  "terminal": {
+    "shell": {
+      "program": "fish"
+    }
+  },
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Tokyo Night"
+  },
+  "buffer_font_family": "Maple Mono NF CN",
+  "buffer_font_size": 14.666666666666666,
+  "ui_font_family": "Inter",
+  "ui_font_size": 14.666666666666666
+}
